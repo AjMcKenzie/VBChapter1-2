@@ -1,15 +1,15 @@
 ﻿Public Class Form1
 
     Private Sub btnSinister_Click(sender As Object, e As EventArgs) Handles btnSinister.Click
-        MessageBox.Show("Left")
+        lblLeft.Show()
     End Sub
 
     Private Sub btnDexter_Click(sender As Object, e As EventArgs) Handles btnDexter.Click
-        MessageBox.Show("Right")
+        lblRight.Show()
     End Sub
 
     Private Sub btnMedium_Click(sender As Object, e As EventArgs) Handles btnMedium.Click
-        MessageBox.Show("Center")
+        lblCenter.Show()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click

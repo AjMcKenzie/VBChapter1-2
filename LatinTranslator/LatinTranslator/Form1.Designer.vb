@@ -27,6 +27,9 @@ Partial Class Form1
         Me.btnMedium = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblLeft = New System.Windows.Forms.Label()
+        Me.lblRight = New System.Windows.Forms.Label()
+        Me.lblCenter = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnSinister
@@ -60,7 +63,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 54)
+        Me.Label1.Location = New System.Drawing.Point(12, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(446, 23)
         Me.Label1.TabIndex = 4
@@ -75,11 +78,50 @@ Partial Class Form1
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'lblLeft
+        '
+        Me.lblLeft.AutoSize = True
+        Me.lblLeft.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLeft.Location = New System.Drawing.Point(92, 78)
+        Me.lblLeft.Name = "lblLeft"
+        Me.lblLeft.Size = New System.Drawing.Size(52, 27)
+        Me.lblLeft.TabIndex = 6
+        Me.lblLeft.Text = "Left"
+        Me.lblLeft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblLeft.Visible = False
+        '
+        'lblRight
+        '
+        Me.lblRight.AutoSize = True
+        Me.lblRight.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRight.Location = New System.Drawing.Point(207, 78)
+        Me.lblRight.Name = "lblRight"
+        Me.lblRight.Size = New System.Drawing.Size(59, 27)
+        Me.lblRight.TabIndex = 7
+        Me.lblRight.Text = "Right"
+        Me.lblRight.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblRight.Visible = False
+        '
+        'lblCenter
+        '
+        Me.lblCenter.AutoSize = True
+        Me.lblCenter.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCenter.Location = New System.Drawing.Point(321, 78)
+        Me.lblCenter.Name = "lblCenter"
+        Me.lblCenter.Size = New System.Drawing.Size(74, 27)
+        Me.lblCenter.TabIndex = 8
+        Me.lblCenter.Text = "Center"
+        Me.lblCenter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblCenter.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(465, 209)
+        Me.Controls.Add(Me.lblCenter)
+        Me.Controls.Add(Me.lblRight)
+        Me.Controls.Add(Me.lblLeft)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnMedium)
@@ -96,5 +138,8 @@ Partial Class Form1
     Friend WithEvents btnMedium As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents lblLeft As System.Windows.Forms.Label
+    Friend WithEvents lblRight As System.Windows.Forms.Label
+    Friend WithEvents lblCenter As System.Windows.Forms.Label
 
 End Class
